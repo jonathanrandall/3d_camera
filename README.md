@@ -2,7 +2,14 @@
 The 3d Camera collects stereo pair data with ground truth disparity images.The project came about because I couldn't find any decent data to use in my project, so I decided to generate some myself. To demonstrate, I train a convolutional neural network to extract the disparity image from the stereo pair. The camera is made from a Synchronized Dual Lens Stereo USB Camera and an Arducam Time of Flight camera. They are both connected to a raspberry pi.
 
 ## Equipment:
+Raspberry pi 4
+Arducam Time of Flight Camera: see for example: [https://core-electronics.com.au/time-of-flight-camera-for-raspberry-pi.html](https://core-electronics.com.au/time-of-flight-camera-for-raspberry-pi.html)
 Stereo camera: _Camera USB-960P2CAM_ I bought mine from Amazon, but best to shop around. link is [USB-960P2CAM](https://www.amazon.com.au/gp/product/B07R8LQKV4/)
+
+## Links:
+Arducam getting started [https://docs.arducam.com/Raspberry-Pi-Camera/Tof-camera/Getting-Started/](https://docs.arducam.com/Raspberry-Pi-Camera/Tof-camera/Getting-Started/)
+[Arducam github](https://github.com/ArduCAM/Arducam_tof_camera)
+[Building a CNN based autoencoder](https://medium.com/@polanitzer/building-a-cnn-based-autoencoder-with-denoising-in-python-on-gray-scale-images-of-hand-drawn-digits-61131ec492e4)
 
 ## Direcotry and Files Description:
 - __frames_out__ : this directory contains the raw stereo images and the left and right stereo images that have been split up and trimmed so the size matches the time of flight training data.
